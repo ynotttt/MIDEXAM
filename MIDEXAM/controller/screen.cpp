@@ -9,7 +9,7 @@ void mainMenu() {
     for (int i = 0; i < patients; i++)
     {
         scanf("%d %s %d", &day, month, &year); getchar();
-        scanf(" - %[^\n]", name);
+        scanf(" - %[^\n]", name); getchar();
         pushPQ(name, day, month, year);
     }
 
